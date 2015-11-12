@@ -71,6 +71,10 @@ l4t_download_src(gstomx_src.tbz2
 l4t_download_src(gstjpeg_src.tbz2
   4744fae2189cd0cd202e9cfdef0b1dcf0571add1)
 
+file(MAKE_DIRECTORY doc/html)
+extract(${TOP}/doc/Tegra_Linux_Driver_Package_Documents_R21.4.tar
+  ${TOP}/doc/html)
+
 extract_src(kernel_src.tbz2)
 extract_src(u-boot_src.tbz2)
 
